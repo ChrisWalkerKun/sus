@@ -5,7 +5,7 @@ app.use((req, res, next) => {
 	console.log( 'Time:' , Date.now());
 	next();
 
-    let date = new Date().toLocaleDateString();
+    let date = new Date().toLocaleString();
     res.send(date);
 });
 
